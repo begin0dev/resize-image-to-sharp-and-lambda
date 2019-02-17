@@ -1,0 +1,23 @@
+{
+  "name": "image-resize",
+  "version": "1.0.0",
+  "description": "Serverless based Lambda function to resize images based on S3 events with the awesome Sharp library",
+  "main": "lib/handler.js",
+  "scripts": {
+    "deploy:prod": "NODE_ENV=production sls deploy --stage=production",
+    "test": "jest"
+  },
+  "author": "begin0dev",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.2.2",
+    "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.385.0",
+    "sharp": "^0.21.3"
+  }
+}
